@@ -22,6 +22,7 @@ brew install <formula>
 -->
 
 - **app-secrets** — syncs project secrets between local files and 1Password vaults. [Source](https://github.com/infinum/mobile-onepassword-secrets)
+- **app-deploy** — CLI for creating CI deployment trigger and build tags for mobile apps. [Source](https://github.com/infinum/app-deploy-script)
 
 ## Contributing
 
