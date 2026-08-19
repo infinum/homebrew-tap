@@ -1,24 +1,24 @@
-class InfinumSecrets < Formula
+class AppSecrets < Formula
   desc "Sync project secrets between local files and 1Password vaults"
   homepage "https://github.com/infinum/mobile-onepassword-secrets"
   url "git@github.com:infinum/mobile-onepassword-secrets.git",
       using:    :git,
       tag:      "v0.1.0",
-      revision: "1543dfca0eef673e573ffad8e28d41f41779fdcd"
+      revision: "988f69a46f132ab47b46fed76844abb61759c305"
   license "Apache-2.0"
 
   depends_on "jq"
 
   def install
     libexec.install "sources"
-    libexec.install "infinum-secrets.sh"
-    (bin/"infinum-secrets").write_env_script libexec/"infinum-secrets.sh",
-                                              INFINUM_SECRETS_SOURCES: libexec/"sources"
+    libexec.install "app-secrets.sh"
+    (bin/"app-secrets").write_env_script libexec/"app-secrets.sh",
+                                         APP_SECRETS_SOURCES: libexec/"sources"
   end
 
   def caveats
     <<~EOS
-      infinum-secrets also needs the 1Password CLI, which Homebrew can't
+      app-secrets also needs the 1Password CLI, which Homebrew can't
       declare as a formula dependency since it's cask-only:
         brew install --cask 1password-cli
 
@@ -29,6 +29,6 @@ class InfinumSecrets < Formula
   end
 
   test do
-    assert_match "infinum-secrets #{version}", shell_output("#{bin}/infinum-secrets --version")
+    assert_match "app-secrets #{version}", shell_output("#{bin}/app-secrets --version")
   end
 end

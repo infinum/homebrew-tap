@@ -21,7 +21,7 @@ brew install <formula>
 - **formula-name** — short description of the tool. [Source](https://github.com/infinum/formula-name)
 -->
 
-- **infinum-secrets** — syncs project secrets between local files and 1Password vaults. [Source](https://github.com/infinum/mobile-onepassword-secrets)
+- **app-secrets** — syncs project secrets between local files and 1Password vaults. [Source](https://github.com/infinum/mobile-onepassword-secrets)
 
 ## Contributing
 
