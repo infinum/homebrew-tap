@@ -3,8 +3,8 @@ class AppSecrets < Formula
   homepage "https://github.com/infinum/mobile-onepassword-secrets"
   url "git@github.com:infinum/mobile-onepassword-secrets.git",
       using:    :git,
-      tag:      "v0.1.0",
-      revision: "988f69a46f132ab47b46fed76844abb61759c305"
+      tag:      "v1.0.0",
+      revision: "fdad0654b3c49dcee6b96aba42362788a15e2269"
   license "Apache-2.0"
 
   depends_on "jq"
