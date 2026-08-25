@@ -1,10 +1,8 @@
 class AppSecrets < Formula
   desc "Sync project secrets between local files and 1Password vaults"
   homepage "https://github.com/infinum/mobile-onepassword-secrets"
-  url "git@github.com:infinum/mobile-onepassword-secrets.git",
-      using:    :git,
-      tag:      "v1.0.0",
-      revision: "fdad0654b3c49dcee6b96aba42362788a15e2269"
+  url "https://github.com/infinum/mobile-onepassword-secrets/archive/refs/tags/v1.0.0.tar.gz"
+  sha256 "1e6ca78320473c89e34ca0021fa04294f72cffa5f3b203052faacf3e7b3f806a"
   license "Apache-2.0"
 
   depends_on "jq"
@@ -21,10 +19,6 @@ class AppSecrets < Formula
       app-secrets also needs the 1Password CLI, which Homebrew can't
       declare as a formula dependency since it's cask-only:
         brew install --cask 1password-cli
-
-      mobile-onepassword-secrets is a private repo, so installing (or
-      upgrading) this formula requires an SSH key with read access to
-      https://github.com/infinum/mobile-onepassword-secrets
     EOS
   end
 
