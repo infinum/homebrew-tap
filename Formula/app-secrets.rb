@@ -1,8 +1,8 @@
 class AppSecrets < Formula
   desc "Sync project secrets between local files and 1Password vaults"
   homepage "https://github.com/infinum/mobile-onepassword-secrets"
-  url "https://github.com/infinum/mobile-onepassword-secrets/archive/refs/tags/v1.0.0.tar.gz"
-  sha256 "1e6ca78320473c89e34ca0021fa04294f72cffa5f3b203052faacf3e7b3f806a"
+  url "https://github.com/infinum/mobile-onepassword-secrets/archive/refs/tags/v1.0.1.tar.gz"
+  sha256 "f687f1d96d0eba59ebabe8910bdeb1e53594ba6a03eca911ce1aef5fce03a4ce"
   license "Apache-2.0"
 
   depends_on "jq"
