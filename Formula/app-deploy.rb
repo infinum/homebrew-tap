@@ -1,8 +1,8 @@
 class AppDeploy < Formula
   desc "CLI for creating CI deployment trigger and build tags for mobile apps"
   homepage "https://github.com/infinum/app-deploy-script"
-  url "https://github.com/infinum/app-deploy-script/archive/refs/tags/v2.2.2.tar.gz"
-  sha256 "1a11a97ee9f741f9a0d774031abb705310b557215df81b2ed7eccaea9d1a7178"
+  url "https://github.com/infinum/app-deploy-script/archive/refs/tags/v2.2.3.tar.gz"
+  sha256 "fa1f604d75e6b8f5885209bbf159e253ac9478dbd946eb3602e3e354b6ddbfb4"
   license "Apache-2.0"
 
   def install
